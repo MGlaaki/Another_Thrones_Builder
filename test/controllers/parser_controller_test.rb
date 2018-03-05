@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class StaticPageTest < ActiveSupport::TestCase
+class ParserControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
