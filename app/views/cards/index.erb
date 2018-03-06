@@ -1,1 +1,8 @@
 <h1>ALL CARDS</h1>
+
+<%for card in @cards do%>
+  <%= card.title%>
+<%end%>
+
+
+<%= link_to "accueil", root_path %>
