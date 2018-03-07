@@ -1,8 +1,9 @@
 <h1>ALL CARDS</h1>
 
 <%for card in @cards do%>
-  <%= card.title%>
+  <p><%= card.title%></p>
 <%end%>
 
 
+<%= link_to "add card manually", new_card_path%>
 <%= link_to "accueil", root_path %>
