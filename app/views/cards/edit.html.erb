@@ -1,0 +1,15 @@
+<h1>Edit card</h1>
+
+<%= form_for @card do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %><br>
+
+  <%= f.label :house %>
+  <%= f.text_field :house %><br>
+
+  <%= f.submit %>
+
+<%end%>
+
+
+<%= link_to "back", cards_path %>

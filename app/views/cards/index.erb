@@ -1,7 +1,9 @@
 <h1>ALL CARDS</h1>
 
 <%for card in @cards do%>
-  <p><%= card.title%></p>
+  <p><%= link_to card.title, card_path(card) %>
+  <%= link_to "edit", edit_card_path(card)%>
+  <%= link_to "delete", card, :method=>"delete"%></p> 
 <%end%>
 
 
