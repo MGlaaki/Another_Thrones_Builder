@@ -1,3 +1,19 @@
-<p>ah que coucou</p>
+<%require 'open-uri'
+require 'json'
+
+raw_data = "1"
+
+open('https://thronesdb.com/api/public/cards/') do |file|
+  file.each_line do |line|
+    raw_data = line
+  end
+end
+
+parsed = JSON.parse(raw_data)
+
+i=67%>
+
+<p><%=parsed[i]["pack_code"]%></p>
+<p><%=parsed[i]["name"]%></p>
 
 <%= link_to "all cards", cards_path %>
