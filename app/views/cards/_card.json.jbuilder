@@ -1,0 +1,2 @@
+json.extract! card, :id, :pack_code, :pack_name, :type_code, :type_name, :faction_code, :faction_name, :position, :name, :cost, :text, :income, :initiative, :claim, :reserve, :deck_limit, :strength, :traits, :flavor, :illustrator, :is_unique, :is_loyal, :is_military, :is_intrigue, :is_power, :is_multiple, :image_url, :label, :ci, :si, :created_at, :updated_at
+json.url card_url(card, format: :json)

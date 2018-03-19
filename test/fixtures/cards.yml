@@ -1,11 +1,63 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  pack_code: MyString
+  pack_name: MyString
+  type_code: MyString
+  type_name: MyString
+  faction_code: MyString
+  faction_name: MyString
+  position: 
+  name: MyString
+  cost: 
+  text: MyString
+  income: 
+  initiative: 
+  claim: 
+  reserve: 
+  deck_limit: 
+  strength: 
+  traits: MyString
+  flavor: MyString
+  illustrator: MyString
+  is_unique: false
+  is_loyal: false
+  is_military: false
+  is_intrigue: false
+  is_power: false
+  is_multiple: false
+  image_url: MyString
+  label: MyString
+  ci: 
+  si: 
+
+two:
+  pack_code: MyString
+  pack_name: MyString
+  type_code: MyString
+  type_name: MyString
+  faction_code: MyString
+  faction_name: MyString
+  position: 
+  name: MyString
+  cost: 
+  text: MyString
+  income: 
+  initiative: 
+  claim: 
+  reserve: 
+  deck_limit: 
+  strength: 
+  traits: MyString
+  flavor: MyString
+  illustrator: MyString
+  is_unique: false
+  is_loyal: false
+  is_military: false
+  is_intrigue: false
+  is_power: false
+  is_multiple: false
+  image_url: MyString
+  label: MyString
+  ci: 
+  si: 

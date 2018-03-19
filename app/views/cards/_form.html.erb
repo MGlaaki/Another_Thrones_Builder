@@ -1,0 +1,162 @@
+<%= form_with(model: card, local: true) do |form| %>
+  <% if card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+      <ul>
+      <% card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :pack_code %>
+    <%= form.text_field :pack_code, id: :card_pack_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pack_name %>
+    <%= form.text_field :pack_name, id: :card_pack_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_code %>
+    <%= form.text_field :type_code, id: :card_type_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_name %>
+    <%= form.text_field :type_name, id: :card_type_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :faction_code %>
+    <%= form.text_field :faction_code, id: :card_faction_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :faction_name %>
+    <%= form.text_field :faction_name, id: :card_faction_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.text_field :position, id: :card_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :card_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.text_field :cost, id: :card_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :text %>
+    <%= form.text_field :text, id: :card_text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :income %>
+    <%= form.text_field :income, id: :card_income %>
+  </div>
+
+  <div class="field">
+    <%= form.label :initiative %>
+    <%= form.text_field :initiative, id: :card_initiative %>
+  </div>
+
+  <div class="field">
+    <%= form.label :claim %>
+    <%= form.text_field :claim, id: :card_claim %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reserve %>
+    <%= form.text_field :reserve, id: :card_reserve %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deck_limit %>
+    <%= form.text_field :deck_limit, id: :card_deck_limit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :strength %>
+    <%= form.text_field :strength, id: :card_strength %>
+  </div>
+
+  <div class="field">
+    <%= form.label :traits %>
+    <%= form.text_field :traits, id: :card_traits %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flavor %>
+    <%= form.text_field :flavor, id: :card_flavor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :illustrator %>
+    <%= form.text_field :illustrator, id: :card_illustrator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_unique %>
+    <%= form.check_box :is_unique, id: :card_is_unique %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_loyal %>
+    <%= form.check_box :is_loyal, id: :card_is_loyal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_military %>
+    <%= form.check_box :is_military, id: :card_is_military %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_intrigue %>
+    <%= form.check_box :is_intrigue, id: :card_is_intrigue %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_power %>
+    <%= form.check_box :is_power, id: :card_is_power %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_multiple %>
+    <%= form.check_box :is_multiple, id: :card_is_multiple %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url, id: :card_image_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :label %>
+    <%= form.text_field :label, id: :card_label %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ci %>
+    <%= form.text_field :ci, id: :card_ci %>
+  </div>
+
+  <div class="field">
+    <%= form.label :si %>
+    <%= form.text_field :si, id: :card_si %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

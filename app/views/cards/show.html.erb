@@ -1,1 +1,149 @@
-<h1><%=@card.title%></h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pack code:</strong>
+  <%= @card.pack_code %>
+</p>
+
+<p>
+  <strong>Pack name:</strong>
+  <%= @card.pack_name %>
+</p>
+
+<p>
+  <strong>Type code:</strong>
+  <%= @card.type_code %>
+</p>
+
+<p>
+  <strong>Type name:</strong>
+  <%= @card.type_name %>
+</p>
+
+<p>
+  <strong>Faction code:</strong>
+  <%= @card.faction_code %>
+</p>
+
+<p>
+  <strong>Faction name:</strong>
+  <%= @card.faction_name %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @card.position %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @card.name %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @card.cost %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @card.text %>
+</p>
+
+<p>
+  <strong>Income:</strong>
+  <%= @card.income %>
+</p>
+
+<p>
+  <strong>Initiative:</strong>
+  <%= @card.initiative %>
+</p>
+
+<p>
+  <strong>Claim:</strong>
+  <%= @card.claim %>
+</p>
+
+<p>
+  <strong>Reserve:</strong>
+  <%= @card.reserve %>
+</p>
+
+<p>
+  <strong>Deck limit:</strong>
+  <%= @card.deck_limit %>
+</p>
+
+<p>
+  <strong>Strength:</strong>
+  <%= @card.strength %>
+</p>
+
+<p>
+  <strong>Traits:</strong>
+  <%= @card.traits %>
+</p>
+
+<p>
+  <strong>Flavor:</strong>
+  <%= @card.flavor %>
+</p>
+
+<p>
+  <strong>Illustrator:</strong>
+  <%= @card.illustrator %>
+</p>
+
+<p>
+  <strong>Is unique:</strong>
+  <%= @card.is_unique %>
+</p>
+
+<p>
+  <strong>Is loyal:</strong>
+  <%= @card.is_loyal %>
+</p>
+
+<p>
+  <strong>Is military:</strong>
+  <%= @card.is_military %>
+</p>
+
+<p>
+  <strong>Is intrigue:</strong>
+  <%= @card.is_intrigue %>
+</p>
+
+<p>
+  <strong>Is power:</strong>
+  <%= @card.is_power %>
+</p>
+
+<p>
+  <strong>Is multiple:</strong>
+  <%= @card.is_multiple %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @card.image_url %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @card.label %>
+</p>
+
+<p>
+  <strong>Ci:</strong>
+  <%= @card.ci %>
+</p>
+
+<p>
+  <strong>Si:</strong>
+  <%= @card.si %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

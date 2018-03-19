@@ -10,19 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180305193734) do
+ActiveRecord::Schema.define(version: 20180319193627) do
 
   create_table "cards", force: :cascade do |t|
-    t.string "title"
-    t.string "house"
-    t.string "text"
+    t.string "pack_code"
+    t.string "pack_name"
+    t.string "type_code"
+    t.string "type_name"
+    t.string "faction_code"
+    t.string "faction_name"
+    t.integer "position"
+    t.string "name"
     t.integer "cost"
-    t.boolean "has_military_icon"
-    t.boolean "has_politic_icon"
-    t.boolean "has_intrigue_icon"
-    t.boolean "is_loyal"
+    t.string "text"
+    t.integer "income"
+    t.integer "initiative"
+    t.integer "claim"
+    t.integer "reserve"
+    t.integer "deck_limit"
     t.integer "strength"
-    t.string "type"
+    t.string "traits"
+    t.string "flavor"
+    t.string "illustrator"
+    t.boolean "is_unique"
+    t.boolean "is_loyal"
+    t.boolean "is_military"
+    t.boolean "is_intrigue"
+    t.boolean "is_power"
+    t.boolean "is_multiple"
+    t.string "image_url"
+    t.string "label"
+    t.integer "ci"
+    t.integer "si"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

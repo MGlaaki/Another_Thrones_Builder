@@ -1,0 +1,83 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pack code</th>
+      <th>Pack name</th>
+      <th>Type code</th>
+      <th>Type name</th>
+      <th>Faction code</th>
+      <th>Faction name</th>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Text</th>
+      <th>Income</th>
+      <th>Initiative</th>
+      <th>Claim</th>
+      <th>Reserve</th>
+      <th>Deck limit</th>
+      <th>Strength</th>
+      <th>Traits</th>
+      <th>Flavor</th>
+      <th>Illustrator</th>
+      <th>Is unique</th>
+      <th>Is loyal</th>
+      <th>Is military</th>
+      <th>Is intrigue</th>
+      <th>Is power</th>
+      <th>Is multiple</th>
+      <th>Image url</th>
+      <th>Label</th>
+      <th>Ci</th>
+      <th>Si</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cards.each do |card| %>
+      <tr>
+        <td><%= card.pack_code %></td>
+        <td><%= card.pack_name %></td>
+        <td><%= card.type_code %></td>
+        <td><%= card.type_name %></td>
+        <td><%= card.faction_code %></td>
+        <td><%= card.faction_name %></td>
+        <td><%= card.position %></td>
+        <td><%= card.name %></td>
+        <td><%= card.cost %></td>
+        <td><%= card.text %></td>
+        <td><%= card.income %></td>
+        <td><%= card.initiative %></td>
+        <td><%= card.claim %></td>
+        <td><%= card.reserve %></td>
+        <td><%= card.deck_limit %></td>
+        <td><%= card.strength %></td>
+        <td><%= card.traits %></td>
+        <td><%= card.flavor %></td>
+        <td><%= card.illustrator %></td>
+        <td><%= card.is_unique %></td>
+        <td><%= card.is_loyal %></td>
+        <td><%= card.is_military %></td>
+        <td><%= card.is_intrigue %></td>
+        <td><%= card.is_power %></td>
+        <td><%= card.is_multiple %></td>
+        <td><%= card.image_url %></td>
+        <td><%= card.label %></td>
+        <td><%= card.ci %></td>
+        <td><%= card.si %></td>
+        <td><%= link_to 'Show', card %></td>
+        <td><%= link_to 'Edit', edit_card_path(card) %></td>
+        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Card', new_card_path %>
